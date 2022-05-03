@@ -1,1510 +1,167 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    
-    <!-- Various Meta Tags -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type"   content="text/html; charset=utf-8">
-    <meta name="viewport"             content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="theme-color"          content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- M$ Settings -->
-    <meta name="msapplication-config"    content="https://mnmll.ist/assets/favicon/browserconfig.xml">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="application-name"        content="mnmllist">
-    
-    <!-- Apple Settings -->
-    <meta name="apple-mobile-web-app-title" content="mnmllist">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Preload the font -->
-    <link rel="preload" href="https://mnmll.ist/assets/css/fonts/2e18fe90-c5ee-4d33-8a12-7cec5950df91.woff2" as="font" type="font/woff2" crossorigin="anonymous">        
-    
-    <!-- Meta Titles -->
-    <meta content="mnmllist – listing all things minimal" itemprop="name">
-    <meta content="mnmllist – listing all things minimal" name="twitter:title">
-    <meta content="mnmllist – listing all things minimal" property="og:title">
-    <meta content="mnmllist" property="og:site_name">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-    <!-- Descriptions -->
-    <meta content="a curated list of all things related to minimalism, from product design to books to art installations" name="description">
-    <meta content="a curated list of all things related to minimalism, from product design to books to art installations" itemprop="description">
-    <meta content="a curated list of all things related to minimalism, from product design to books to art installations" name="twitter:description">
-    <meta content="a curated list of all things related to minimalism, from product design to books to art installations" property="og:description">
+    <link data-n-head="ssr" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;amp;subset=cyrillic&quot; rel=&quot;stylesheet">
 
-    <!-- Images -->
-    <meta content="https://mnmll.ist/content/social.jpg" itemprop="image">
-    <meta content="https://mnmll.ist/content/social.jpg" name="twitter:image">
-    <meta content="https://mnmll.ist/content/social.jpg" property="og:image">
-        
-    <!-- Twitter:extra -->
-    <meta name="twitter:card"    content="summary_large_image">
-    <meta name="twitter:site"    content="@mnmllist">
-    <meta name="twitter:creator" content="@carlbarenbrug">
-
-    <!-- Facebook:extra -->
-    <meta property="og:url" content="https://mnmll.ist">
-    
-    
-    <!-- Page Title -->
-    <title>mnmllist – listing all things minimal</title>
-    
-    <!-- Various Icons -->  
-    <link rel="apple-touch-icon" href="https://mnmll.ist/assets/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon"             href="https://mnmll.ist/assets/favicons/favicon-32x32.png"    sizes="32x32" type="image/png">
-    <link rel="icon"             href="https://mnmll.ist/assets/favicons/favicon-16x16.png"    sizes="16x16" type="image/png">
-    <link rel="mask-icon"        href="https://mnmll.ist/assets/favicons/safari-pinned-tab.svg" color="#000000">
-    <link rel="manifest"         href="https://mnmll.ist/assets/favicons/manifest.webmanifest">
-    
-    <!-- Standard Favicon -->  
-    <link rel="shortcut icon" href="https://mnmll.ist/assets/favicons/favicon.ico">    
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="https://mnmll.ist/assets/css/main.min.css?v=1.2">
-    
-
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Александр Попов</title>
 </head>
-<body data-scheme="carl">
-    <main class="home">
-
-        <header class="header">
-            <h1 class="header-title"><a href="https://twitter.com/mnmllist" target="_blank">mnmllist</a></h1>
-            <h2 class="header-subtitle">listing all things minimal</h2>
-        </header><button class="menu-btn"><span class="menu-btn-text">all lists</span></button>
-<nav class="menu">
-    <ul class="menu-list">
-            
-                
-                    <li class="menu-item menu-item-title">Art</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#art-posters">Posters</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#art-sculptures">Sculptures</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Bikes</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#bikes-city">City Bikes</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Blogs</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#blogs-graphic-design">Graphic Design</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#blogs-industrial-design">Industrial Design</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#blogs-lifestyle">Lifestyle</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#blogs-web-design">Web Design</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Books</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#books-architecture">Architecture</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#books-art">Art</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#books-interior-design">Interior Design</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#books-lifestyle">Lifestyle</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#books-product">Product Design</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Cities</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#cities-mexico-city">Mexico City</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#cities-tokyo">Tokyo</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Fashion</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#fashion-backpacks">Backpacks</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#fashion-basketball-shoes">Basketball Shoes</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#fashion-sneakers">Sneakers</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#fashion-sunglasses">Sunglasses</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#fashion-tshirts">T-Shirts</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#fashion-wallets">Wallets</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#fashion-watches">Watches</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Furniture</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#furniture-coffee-tables">Coffee Tables</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#furniture-desks">Desks</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#furniture-dining-chairs">Dining Chairs</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#furniture-dining-tables">Dining Tables</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#furniture-lounge-chairs">Lounge Chairs</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#furniture-sofas">Sofas</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Homewares</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#homewares-diffusers">Diffusers</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#homewares-humidifiers">Humidifiers</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Lighting</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#lighting-ceiling-lamps">Ceiling Lamps</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#lighting-floor-lamps">Floor Lamps</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#lighting-table-lamps">Table Lamps</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Magazines</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#magazines-design">Design</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#magazines-travel">Travel</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Stationery</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#stationary">Pens</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Studios</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#studios-architecture">Architecture</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#studios-graphic-design">Graphic Design</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#studios-web-design">Web Design</a></li>
-
-            
-                
-                    <li class="menu-item menu-item-title">Technology</li>
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#technology-headphones">Headphones</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#technology-laptops">Laptops</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#technology-monitors">Monitors</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#technology-phones">Phones</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#technology-speakers">Speakers</a></li>
-
-            
-                
-                
-        <li class="menu-item"><a class="menu-link" href="https://mnmll.ist/#technology-tvs">TVs</a></li>
-
-        </ul>
-</nav><div class="grid">
-    <article class="list-container" id="art-posters">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Art            <span class='list-spacer'> / </span> <span class='list-subcategory'>Posters</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://shop.minimalissimo.com/product/lands-print/" target="_blank">
-        <h3 class="product-name">Lands</h3>
-        <p class="product-brand">Aivaras Simonis</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://quadracollective.com/collections/all/products/that-moment-was-only-one-art-print-50-x-70-cm" target="_blank">
-        <h3 class="product-name">That Moment Was Only One</h3>
-        <p class="product-brand">Diogo Akio</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://thethingoldline.com" target="_blank">
-        <h3 class="product-name">The Thin Gold Line</h3>
-        <p class="product-brand">Plus Minus</p>
-    </a>
-</li>        </ol>
+<body>
+<div class="container">
+    <div class="row" style="margin-top: 2rem">
+        <h1 class="title">Александр Попов</h1>
     </div>
-    
-    
-</article>
-<article class="list-container" id="art-sculptures">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Art            <span class='list-spacer'> / </span> <span class='list-subcategory'>Sculptures</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://minimalissimo.com/paper-studies/" target="_blank">
-        <h3 class="product-name">Paper Studies</h3>
-        <p class="product-brand">Rangga Setiadi</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.nendo.jp/en/works/nendo-invisible-outlines-2/?erelease" target="_blank">
-        <h3 class="product-name">Invisible Outlines</h3>
-        <p class="product-brand">Nendo</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://minimalissimo.com/movement-in-stone/" target="_blank">
-        <h3 class="product-name">Movement in Stone</h3>
-        <p class="product-brand">Armen Agop</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="bikes-city">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Bikes            <span class='list-spacer'> / </span> <span class='list-subcategory'>City Bikes</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://copenhagenbikecompany.com/bikes/city-cruiser/" target="_blank">
-        <h3 class="product-name">City Cruiser</h3>
-        <p class="product-brand">Copenhagen Bike Company</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://budnitzbicycles.com/bicycles/view/no1-titanium-city-bicycle" target="_blank">
-        <h3 class="product-name">Budnitz No.1</h3>
-        <p class="product-brand">Budnitz</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://bikeid.se/en/shop/cyklar/majestic-2-vaxlad/" target="_blank">
-        <h3 class="product-name">Majestic 2-Speed</h3>
-        <p class="product-brand">BIKEID</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="blogs-graphic-design">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Blogs            <span class='list-spacer'> / </span> <span class='list-subcategory'>Graphic Design</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://visualjournal.it/" target="_blank">
-        <h3 class="product-name">Visual Journal</h3>
-        <p class="product-brand">Aesse</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://bpando.org" target="_blank">
-        <h3 class="product-name">BP&amp;O</h3>
-        <p class="product-brand">Richard Baird</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://visuelle.co.uk" target="_blank">
-        <h3 class="product-name">Visuelle</h3>
-        <p class="product-brand">David Bennett</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="blogs-industrial-design">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Blogs            <span class='list-spacer'> / </span> <span class='list-subcategory'>Industrial Design</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://minimalissimo.com" target="_blank">
-        <h3 class="product-name">Minimalissimo</h3>
-        <p class="product-brand">Minimalissimo</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://leibal.com" target="_blank">
-        <h3 class="product-name">Leibal</h3>
-        <p class="product-brand">Leibal</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.aesence.com" target="_blank">
-        <h3 class="product-name">Aesence</h3>
-        <p class="product-brand">Sarah Dorweiler</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="blogs-lifestyle">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Blogs            <span class='list-spacer'> / </span> <span class='list-subcategory'>Lifestyle</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://minimalism.life/" target="_blank">
-        <h3 class="product-name">Minimalism Life</h3>
-        <p class="product-brand">Minimalism Life</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.theminimalists.com/" target="_blank">
-        <h3 class="product-name">The Minimalists</h3>
-        <p class="product-brand">Joshua F. Millburn &amp; Ryan Nicodemus</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://zenhabits.net/" target="_blank">
-        <h3 class="product-name">Zen Habits</h3>
-        <p class="product-brand">Leo Babauta</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="blogs-web-design">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Blogs            <span class='list-spacer'> / </span> <span class='list-subcategory'>Web Design</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://thegallery.io" target="_blank">
-        <h3 class="product-name">The Gallery</h3>
-        <p class="product-brand">Manu Moreale</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://hoverstat.es" target="_blank">
-        <h3 class="product-name">Hover States</h3>
-        <p class="product-brand">Animade</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.typewolf.com" target="_blank">
-        <h3 class="product-name">Typewolf</h3>
-        <p class="product-brand">Jeremiah Shoaf</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="books-architecture">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Books            <span class='list-spacer'> / </span> <span class='list-subcategory'>Architecture</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://uk.phaidon.com/store/architecture/marcel-breuer-9780714870229/" target="_blank">
-        <h3 class="product-name">Breuer</h3>
-        <p class="product-brand">Robert McCarter</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.zupagrafika.com/zupamarket_brutal_London_book_zupagrafika.html" target="_blank">
-        <h3 class="product-name">Brutal London</h3>
-        <p class="product-brand">Zupagrafika</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://uk.phaidon.com/store/architecture/spectrum-9780714875286/" target="_blank">
-        <h3 class="product-name">Spectrum</h3>
-        <p class="product-brand">John Pawson</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="books-art">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Books            <span class='list-spacer'> / </span> <span class='list-subcategory'>Art</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://uk.phaidon.com/store/art/minimalism-9780714856537/" target="_blank">
-        <h3 class="product-name">Minimalism</h3>
-        <p class="product-brand">James Meyer</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://uk.phaidon.com/store/art/ellsworth-kelly-9780714869476/" target="_blank">
-        <h3 class="product-name">Ellsworth Kelly</h3>
-        <p class="product-brand">Tricia Y Paik</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.amazon.co.uk/Donald-Judd-Richard-Shiff/dp/3869303905/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=HMYZ2Y02HQ2DNS2Y4Y44" target="_blank">
-        <h3 class="product-name">Donald Judd</h3>
-        <p class="product-brand">Richard Shiff</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="books-interior-design">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Books            <span class='list-spacer'> / </span> <span class='list-subcategory'>Interior Design</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://www.thekinfolkhome.com" target="_blank">
-        <h3 class="product-name">The Kinfolk Home</h3>
-        <p class="product-brand">Kinfolk</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.remodelista.com/posts/storage-book-announcement/" target="_blank">
-        <h3 class="product-name">Remodelista: The Organized Home</h3>
-        <p class="product-brand">Remodelista</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.amazon.co.uk/Monochrome-Home-Elegant-Interiors-Black/dp/1849756139" target="_blank">
-        <h3 class="product-name">Monochrome Home</h3>
-        <p class="product-brand">Hilary Robertson</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="books-lifestyle">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Books            <span class='list-spacer'> / </span> <span class='list-subcategory'>Lifestyle</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.theminimalists.com/etr/" target="_blank">
-        <h3 class="product-name">Everything That Remains</h3>
-        <p class="product-brand">The Minimalists</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.amazon.co.uk/Goodbye-Things-New-Japanese-Minimalism/dp/0393609030" target="_blank">
-        <h3 class="product-name">Goodbye, Things</h3>
-        <p class="product-brand">Fumio Sasaki</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.becomingminimalist.com/simplify/" target="_blank">
-        <h3 class="product-name">Simplify</h3>
-        <p class="product-brand">Joshua Becker</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="books-product">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Books            <span class='list-spacer'> / </span> <span class='list-subcategory'>Product Design</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://uk.phaidon.com/store/design/naoto-fukasawa-embodiment-9780714876078/" target="_blank">
-        <h3 class="product-name">Embodiment</h3>
-        <p class="product-brand">Naoto Fukasawa</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://uk.phaidon.com/store/design/as-little-design-as-possible-9780714849188/" target="_blank">
-        <h3 class="product-name">As Little Design as Possible</h3>
-        <p class="product-brand">Dieter Rams</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.lars-mueller-publishers.com/ex-formation" target="_blank">
-        <h3 class="product-name">Ex-formation</h3>
-        <p class="product-brand">Kenya Hara</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="cities-mexico-city">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Cities            <span class='list-spacer'> / </span> <span class='list-subcategory'>Mexico City</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://www.casaluisbarragan.org" target="_blank">
-        <h3 class="product-name">Casa Luis Barr&aacute;gan</h3>
-        <p class="product-brand">Luis Barrag&aacute;n</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://museotamayo.org" target="_blank">
-        <h3 class="product-name">Museo Tamayo</h3>
-        <p class="product-brand">Olga &amp; Rufino Tamayo Foundation</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.hoteldistritocapital.com" target="_blank">
-        <h3 class="product-name">Distrito Capital</h3>
-        <p class="product-brand">Grupo Habita</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="cities-tokyo">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Cities            <span class='list-spacer'> / </span> <span class='list-subcategory'>Tokyo</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://fffffft.com" target="_blank">
-        <h3 class="product-name">#FFFFFFT</h3>
-        <p class="product-brand">#FFFFFFT</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://bookandsons.com" target="_blank">
-        <h3 class="product-name">Book And Sons</h3>
-        <p class="product-brand">Book And Sons</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.tokyosaryo.jp" target="_blank">
-        <h3 class="product-name">Tokyo Saryo</h3>
-        <p class="product-brand">Tokyo Saryo</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="fashion-backpacks">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Fashion            <span class='list-spacer'> / </span> <span class='list-subcategory'>Backpacks</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.coteetciel.com/en-GB/new-nile-obsidian-black" target="_blank">
-        <h3 class="product-name">Nile</h3>
-        <p class="product-brand">C&ocirc;te&amp;Ciel</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://ism-sf.com/discount/mnml10&userId=2007091&signature=80add41131b736af" target="_blank">
-        <h3 class="product-name">The Classic</h3>
-        <p class="product-brand">ISM</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://alfiedouglas.com/collections/backpacks/products/zero-top-large-noir" target="_blank">
-        <h3 class="product-name">Zero Large</h3>
-        <p class="product-brand">Alfie Douglas</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="fashion-basketball-shoes">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Fashion            <span class='list-spacer'> / </span> <span class='list-subcategory'>Basketball Shoes</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.nike.com/t/jordan-why-not-zer01-mens-basketball-shoe-rdsBSS/AA2510-100" target="_blank">
-        <h3 class="product-name">&quot;Why Not?&quot; ZER0.1</h3>
-        <p class="product-brand">Jordan</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.adidas.com/us/harden-ls-2-shoes/AC7435.html" target="_blank">
-        <h3 class="product-name">Harden LS 2</h3>
-        <p class="product-brand">Adidas</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.nike.com/t/mamba-rage-mens-basketball-shoe-KL8ZBK/908972-002" target="_blank">
-        <h3 class="product-name">Mamba Rage</h3>
-        <p class="product-brand">Nike</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="fashion-sneakers">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Fashion            <span class='list-spacer'> / </span> <span class='list-subcategory'>Sneakers</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://store.y-3.com/gb/y3store/sneakers_cod11452893uq.html" target="_blank">
-        <h3 class="product-name">Y-3 Suberou</h3>
-        <p class="product-brand">Adidas Y-3</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://theynewyork.com/men/triangle-low-in-white-black-men" target="_blank">
-        <h3 class="product-name">Triangle Low</h3>
-        <p class="product-brand">THEY New York</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.arkkcopenhagen.com/products/raven-fg-20-s-e15-black-gum-men-raven" target="_blank">
-        <h3 class="product-name">Raven FG 2.0</h3>
-        <p class="product-brand">ARKK Copenhagen</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="fashion-sunglasses">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Fashion            <span class='list-spacer'> / </span> <span class='list-subcategory'>Sunglasses</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.antonioli.eu/en/GB/men/products/dd03a2-black" target="_blank">
-        <h3 class="product-name">Damir Doma x Mykita</h3>
-        <p class="product-brand">Antonioli</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.saintstudio.com.br/produto/round-one-black-96" target="_blank">
-        <h3 class="product-name">Round One Black</h3>
-        <p class="product-brand">Saint Studio</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.blyszak.com/collections/all/products/style-i-metal-porcelain" target="_blank">
-        <h3 class="product-name">Signature</h3>
-        <p class="product-brand">Blyszak Eyewear</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="fashion-tshirts">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Fashion            <span class='list-spacer'> / </span> <span class='list-subcategory'>T-Shirts</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.saintstudio.com.br/produto/t-shirt-illusion-331" target="_blank">
-        <h3 class="product-name">Illusion</h3>
-        <p class="product-brand">Saint Studio</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.bassike.com/dot-t-shirt-mbdot-wht" target="_blank">
-        <h3 class="product-name">Dot</h3>
-        <p class="product-brand">Bassike</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.handvaerk.com/shop/men/mens-tshirts/crew-neck-t-shirt/" target="_blank">
-        <h3 class="product-name">Crew Neck T Shirt</h3>
-        <p class="product-brand">h&aring;ndv&aelig;rk</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="fashion-wallets">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Fashion            <span class='list-spacer'> / </span> <span class='list-subcategory'>Wallets</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://themoneywrap.com" target="_blank">
-        <h3 class="product-name">The Moneywrap</h3>
-        <p class="product-brand">Daycraft</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://bellroy.com/products/card-sleeve-wallet/default/black" target="_blank">
-        <h3 class="product-name">Card Sleeve</h3>
-        <p class="product-brand">Bellroy</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.dudubags.com/en_it/mens-zipper-wallet-leather-sam-dudu.html?s=4612" target="_blank">
-        <h3 class="product-name">Sam DuDu</h3>
-        <p class="product-brand">dudubags</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="fashion-watches">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Fashion            <span class='list-spacer'> / </span> <span class='list-subcategory'>Watches</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.instrmnt.co.uk/k-100" target="_blank">
-        <h3 class="product-name">Instrmnt K-100</h3>
-        <p class="product-brand">Instrmnt</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.tidwatches.com/en/shop/no1-white-black_-leather_-wristband#page=4" target="_blank">
-        <h3 class="product-name">TID No.1 White</h3>
-        <p class="product-brand">TID Watches</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://stockwatches.com.au/#shop" target="_blank">
-        <h3 class="product-name">S005C</h3>
-        <p class="product-brand">Stock Watches</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="furniture-coffee-tables">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Furniture            <span class='list-spacer'> / </span> <span class='list-subcategory'>Coffee Tables</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://shop.minimalissimo.com/product/duotone-coffee-table/" target="_blank">
-        <h3 class="product-name">Duotone Coffee Table</h3>
-        <p class="product-brand">YIELD</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://shop.minimalissimo.com/product/tunnel-side-table/" target="_blank">
-        <h3 class="product-name">Tunnel</h3>
-        <p class="product-brand">OS &amp; OOS</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://love-aesthetics.myshopify.com/collections/frontpage/products/knik-fraem" target="_blank">
-        <h3 class="product-name">Knik Fraem</h3>
-        <p class="product-brand">Aetelier</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="furniture-desks">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Furniture            <span class='list-spacer'> / </span> <span class='list-subcategory'>Desks</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://lz-elements.com/shop/sinus-family" target="_blank">
-        <h3 class="product-name">Sinus Trestle</h3>
-        <p class="product-brand">L&amp;Z</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.normann-copenhagen.com/en/Products/Furniture/Tables/Desks/Journal-Desk-Black-602190" target="_blank">
-        <h3 class="product-name">Journal Desk</h3>
-        <p class="product-brand">Normann Copenhagen</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.rife-design.com/industrial/tables/leg_in" target="_blank">
-        <h3 class="product-name">Leg_in</h3>
-        <p class="product-brand">Francesc Rif&eacute;</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="furniture-dining-chairs">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Furniture            <span class='list-spacer'> / </span> <span class='list-subcategory'>Dining Chairs</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://menu.as/en/furniture/afteroom-dining-chair-4/" target="_blank">
-        <h3 class="product-name">Afteroom Chair</h3>
-        <p class="product-brand">Menu</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.tomfereday.com/furniture/sia-le/" target="_blank">
-        <h3 class="product-name">SIA Chair</h3>
-        <p class="product-brand">Tom Fereday</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.regular.company/h3-chair/" target="_blank">
-        <h3 class="product-name">h.3 Chair</h3>
-        <p class="product-brand">Regular Company</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="furniture-dining-tables">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Furniture            <span class='list-spacer'> / </span> <span class='list-subcategory'>Dining Tables</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.normann-copenhagen.com/en/Products/Furniture/Tables/Dining-Tables/Union-Table-250-x-90-cm-Black-1401167" target="_blank">
-        <h3 class="product-name">Union Table</h3>
-        <p class="product-brand">Normann Copenhagen</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://hay.dk/en/hay/series-brand/loop-stand/loop-stand" target="_blank">
-        <h3 class="product-name">Loop Stand</h3>
-        <p class="product-brand">HAY</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.boconcept.com/en-gb/milano/3700BCCT013CC41.html?cgid=tables" target="_blank">
-        <h3 class="product-name">Milano</h3>
-        <p class="product-brand">BoConcept</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="furniture-lounge-chairs">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Furniture            <span class='list-spacer'> / </span> <span class='list-subcategory'>Lounge Chairs</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://loehr.co/collection/DL2-Euclides/index_en.html" target="_blank">
-        <h3 class="product-name">Euclides</h3>
-        <p class="product-brand">Loehr</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.knoll.com/product/womb-chair-medium" target="_blank">
-        <h3 class="product-name">Womb Chair</h3>
-        <p class="product-brand">Knoll</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.viccarbe.com/product/colubi-armchair/" target="_blank">
-        <h3 class="product-name">Colubi Armchair</h3>
-        <p class="product-brand">Viccarbe</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="furniture-sofas">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Furniture            <span class='list-spacer'> / </span> <span class='list-subcategory'>Sofas</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.hem.com/collections/sofas-poufs/products/palo-2-seater-armrest?variant=17509699719" target="_blank">
-        <h3 class="product-name">Palo</h3>
-        <p class="product-brand">Hem</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://muuto.com/furniture/sofas/oslo-series" target="_blank">
-        <h3 class="product-name">Oslo</h3>
-        <p class="product-brand">Muuto</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.normann-copenhagen.com/en/Products/Furniture/Sofas/Modular-Sofas/Rope-Sofa-2-seater-1002000" target="_blank">
-        <h3 class="product-name">Rope</h3>
-        <p class="product-brand">Normann Copenhagen</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="homewares-diffusers">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Homewares            <span class='list-spacer'> / </span> <span class='list-subcategory'>Diffusers</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.air-aroma.com/aromax" target="_blank">
-        <h3 class="product-name">Aromax</h3>
-        <p class="product-brand">Air Aroma</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://elevenpl.us/product/house-aroma-diffuser/" target="_blank">
-        <h3 class="product-name">House Aroma</h3>
-        <p class="product-brand">Elevenplus</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://oakandmorrow.com/en/work/revivre/" target="_blank">
-        <h3 class="product-name">Revivre</h3>
-        <p class="product-brand">Oak &amp; Morrow</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="homewares-humidifiers">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Homewares            <span class='list-spacer'> / </span> <span class='list-subcategory'>Humidifiers</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://elevenpl.us/product/bottle-humidifier/" target="_blank">
-        <h3 class="product-name">Bottle Humidifier</h3>
-        <p class="product-brand">Elevenplus</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.kazushigemiyake.com/design/2017/03/humidifier.html" target="_blank">
-        <h3 class="product-name">MUJI Humidifier</h3>
-        <p class="product-brand">Miyake Design</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.moma.org/collection/works/105070" target="_blank">
-        <h3 class="product-name">Plus Minus Zero Humidifier</h3>
-        <p class="product-brand">Naoto Fukasawa</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="lighting-ceiling-lamps">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Lighting            <span class='list-spacer'> / </span> <span class='list-subcategory'>Ceiling Lamps</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://michaelanastassiades.com/collection" target="_blank">
-        <h3 class="product-name">Mobile Chandelier</h3>
-        <p class="product-brand">Michael Anastassiades</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://toddbracher.com/work/vessel/" target="_blank">
-        <h3 class="product-name">Vessel</h3>
-        <p class="product-brand">Todd Bracher Studio</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://studiovit.se/#cast-lights" target="_blank">
-        <h3 class="product-name">Cast Light</h3>
-        <p class="product-brand">Studio Vit</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="lighting-floor-lamps">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Lighting            <span class='list-spacer'> / </span> <span class='list-subcategory'>Floor Lamps</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://northern.no/wr/product/snowball/" target="_blank">
-        <h3 class="product-name">Snowball</h3>
-        <p class="product-brand">Northern</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.bjornvandenberg.no/Aerial" target="_blank">
-        <h3 class="product-name">Aura</h3>
-        <p class="product-brand">Bj&oslash;rn van den Berg</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://romainvoulet.com/CALCITE" target="_blank">
-        <h3 class="product-name">Calcite</h3>
-        <p class="product-brand">Romain Voulet</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="lighting-table-lamps">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Lighting            <span class='list-spacer'> / </span> <span class='list-subcategory'>Table Lamps</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://shop.minimalissimo.com/product/bulb/" target="_blank">
-        <h3 class="product-name">Bulb</h3>
-        <p class="product-brand">Minimalux</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://muuto.com/lighting/tip-lamp" target="_blank">
-        <h3 class="product-name">Tip Lamp</h3>
-        <p class="product-brand">Muuto</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.nendo.jp/en/works/gaku/?erelease" target="_blank">
-        <h3 class="product-name">Gaku Lamp</h3>
-        <p class="product-brand">Nendo</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="magazines-design">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Magazines            <span class='list-spacer'> / </span> <span class='list-subcategory'>Design</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://minimalissimo.com/magazine/" target="_blank">
-        <h3 class="product-name">Minimalissimo N&ordm;2</h3>
-        <p class="product-brand">Minimalissimo</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://heygents.com.au/magazine/" target="_blank">
-        <h3 class="product-name">Hey Gents Issue 3</h3>
-        <p class="product-brand">Hey Gents</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.forms-of-formalism.com/n3/" target="_blank">
-        <h3 class="product-name">Forms of Formalism N3</h3>
-        <p class="product-brand">Louis De Belle</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="magazines-travel">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Magazines            <span class='list-spacer'> / </span> <span class='list-subcategory'>Travel</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://readcereal.com/product/cereal-volume-15/" target="_blank">
-        <h3 class="product-name">Cereal Volume 15</h3>
-        <p class="product-brand">Cereal</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.travel-almanac.com/collections/magazine-issues/products/tta14-spring-summer-2019" target="_blank">
-        <h3 class="product-name">TTA14 &quot;The Border Issue&quot;</h3>
-        <p class="product-brand">The Travel Almanac</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://en.store.lesothers.com/products/pre-orders-les-others-magazine-volume-vii" target="_blank">
-        <h3 class="product-name">Les Others Magazine Volume VII</h3>
-        <p class="product-brand">Les Others</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="stationary">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Stationery            <span class='list-spacer'> / </span> <span class='list-subcategory'>Pens</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://shop.minimalissimo.com/product/travel-pen/" target="_blank">
-        <h3 class="product-name">Travel Pen</h3>
-        <p class="product-brand">Minimalux</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://cwandt.com/products/pen-type-a?variant=113683652" target="_blank">
-        <h3 class="product-name">Pen Type-A</h3>
-        <p class="product-brand">CW&amp;T</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.beyond-object.com/alignpen" target="_blank">
-        <h3 class="product-name">Align</h3>
-        <p class="product-brand">Beyond Object</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="studios-architecture">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Studios            <span class='list-spacer'> / </span> <span class='list-subcategory'>Architecture</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://www.airesmateus.com/" target="_blank">
-        <h3 class="product-name">Aires Mateus</h3>
-        <p class="product-brand">Aires Mateus</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://normcph.com/" target="_blank">
-        <h3 class="product-name">Norm Architects</h3>
-        <p class="product-brand">Norm Architects</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.tadao-ando.com/" target="_blank">
-        <h3 class="product-name">Tadao Ando</h3>
-        <p class="product-brand">Tadao Ando</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="studios-graphic-design">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Studios            <span class='list-spacer'> / </span> <span class='list-subcategory'>Graphic Design</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://heydays.no/" target="_blank">
-        <h3 class="product-name">Heydays</h3>
-        <p class="product-brand">Heydays</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://www.artiva.it/" target="_blank">
-        <h3 class="product-name">Artiva Design</h3>
-        <p class="product-brand">Artiva Design</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://the-studio.se/" target="_blank">
-        <h3 class="product-name">The Studio</h3>
-        <p class="product-brand">The Studio</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="studios-web-design">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Studios            <span class='list-spacer'> / </span> <span class='list-subcategory'>Web Design</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://yes.studio/" target="_blank">
-        <h3 class="product-name">YES</h3>
-        <p class="product-brand">YES</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="http://thisalso.com/" target="_blank">
-        <h3 class="product-name">This Also</h3>
-        <p class="product-brand">This Also</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://shewasonly.co.uk/" target="_blank">
-        <h3 class="product-name">She Was Only</h3>
-        <p class="product-brand">She Was Only</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="technology-headphones">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Technology            <span class='list-spacer'> / </span> <span class='list-subcategory'>Headphones</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://shop.minimalissimo.com/product/vk-2-legacy-headphones/" target="_blank">
-        <h3 class="product-name">VK-2 Legacy</h3>
-        <p class="product-brand">A&euml;dle</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://aiaiai.dk/headphones/tma-2" target="_blank">
-        <h3 class="product-name">TMA-2 Modular</h3>
-        <p class="product-brand">AIAIAI</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://nocs.se/collections/all/products/ns700-phaser" target="_blank">
-        <h3 class="product-name">NS700 Phaser</h3>
-        <p class="product-brand">Nocs</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="technology-laptops">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Technology            <span class='list-spacer'> / </span> <span class='list-subcategory'>Laptops</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.apple.com/macbook-pro/" target="_blank">
-        <h3 class="product-name">MacBook Pro</h3>
-        <p class="product-brand">Apple</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.microsoft.com/en-us/p/surface-laptop/90fc23dv6snz?activetab=pivot:overviewtab" target="_blank">
-        <h3 class="product-name">Surface Laptop</h3>
-        <p class="product-brand">Microsoft</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://store.google.com/us/product/google_pixelbook?hl=en-US" target="_blank">
-        <h3 class="product-name">Pixelbook</h3>
-        <p class="product-brand">Google</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="technology-monitors">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Technology            <span class='list-spacer'> / </span> <span class='list-subcategory'>Monitors</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="http://www.lg.com/uk/monitors/lg-27MD5KA" target="_blank">
-        <h3 class="product-name">LG 27MD5KA</h3>
-        <p class="product-brand">LG</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.dell.com/en-us/shop/dell-27-ultrathin-monitor-s2718d/apd/210-alwd/monitors-monitor-accessories" target="_blank">
-        <h3 class="product-name">Dell S2718D</h3>
-        <p class="product-brand">Dell</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://eu.aoc.com/en/products/q2781pq" target="_blank">
-        <h3 class="product-name">AOC Q2781PQ</h3>
-        <p class="product-brand">AOC</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="technology-phones">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Technology            <span class='list-spacer'> / </span> <span class='list-subcategory'>Phones</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.blloc.com/" target="_blank">
-        <h3 class="product-name">Blloc Phone</h3>
-        <p class="product-brand">Blloc</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.essential.com/" target="_blank">
-        <h3 class="product-name">Essential Phone</h3>
-        <p class="product-brand">Essential</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.thelightphone.com/" target="_blank">
-        <h3 class="product-name">The Light Phone</h3>
-        <p class="product-brand">Light</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="technology-speakers">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Technology            <span class='list-spacer'> / </span> <span class='list-subcategory'>Speakers</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.bang-olufsen.com/en/collection/wireless-speaker-systems/beosound-1" target="_blank">
-        <h3 class="product-name">BeoSound 1</h3>
-        <p class="product-brand">Bang &amp; Olufsen</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.libratone.com/us/products/too-speakers/too" target="_blank">
-        <h3 class="product-name">TOO Speaker</h3>
-        <p class="product-brand">Libratone</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.beoplay.com/en/landingpages/beoplaym3#introducing" target="_blank">
-        <h3 class="product-name">Beoplay M3 Speaker</h3>
-        <p class="product-brand">B&amp;O Play</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<article class="list-container" id="technology-tvs">
-    <div class="list">
-        
-        <!-- Prepare the title -->
-        <h2 class="list-title">
-            Technology            <span class='list-spacer'> / </span> <span class='list-subcategory'>TVs</span>        </h2>
-        <ol class="list-content">
-        <li class="product">
-    <a class="product-link" href="https://www.sony.com/electronics/televisions/a1e-series" target="_blank">
-        <h3 class="product-name">A1E Series</h3>
-        <p class="product-brand">Sony</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.bang-olufsen.com/en/collection/televisions/beovision-avant" target="_blank">
-        <h3 class="product-name">BeoVision Avant</h3>
-        <p class="product-brand">Bang &amp; Olufsen</p>
-    </a>
-</li><li class="product">
-    <a class="product-link" href="https://www.lg.com/us/tvs/lg-OLED65G7P-signature-oled-4k-tv" target="_blank">
-        <h3 class="product-name">OLED65G7P</h3>
-        <p class="product-brand">LG</p>
-    </a>
-</li>        </ol>
-    </div>
-    
-    
-</article>
-<div class="list-container footer">
-    <div class="footer-content">
-        <h2 class="footer-title">Contribute</h2>
-        <div class="footer-text"><p>We welcome suggestions for us to feature. Just send us a link and the list you think it fits.</p>
-<p><a href="mailto:&#x6d;&#108;&#64;&#x6d;&#110;&#109;&#108;&#108;&#x2e;&#105;&#115;&#x74;">&#x6d;&#108;&#x40;&#x6d;&#x6e;&#109;&#108;&#108;&#46;&#105;&#x73;&#x74;</a></p></div>
-    </div>
-</div></div>
-    </main>
 
-    <script src="https://mnmll.ist/assets/js/app.min.js"></script>    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 narration">
+
+            <h2 class="title">Тимлид, проектный руководитель, бизнес и системный аналитик</h2>
+            <nav class="nav">
+                <a href="mailto:grepto@gmail.com" class="nav-link"> <i class="bi bi-envelope"></i> grepto@gmail.com</a>
+                <a href="https://telegram.me/grepto" class="nav-link"> <i class="bi bi-telegram"></i> grepto</a>
+            </nav>
+
+
+            <p class="lead">Обсуждаю с клиентами проблемы и задачи, пишу понятные спецификации для разработчиков и
+                тестировщиков, провожу демо&nbsp;и&nbsp;обучаю пользователей.</p>
+
+            <p class="lead">Собираю и настраиваю команды разработки, слежу их за производительностью,
+                загрузкой, здоровьем и атмосферой.</p>
+
+            <p class="lead">Обучаю системных и бизнесовых аналитиков быть не только умными, но и полезными для
+                бизнеса</p>
+
+            <p class="lead">Объясняю сложные вещи простым языком.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+            <img src="GR7A3383.jpg" class="img-fluid">
+
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 1rem">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+            <h2>Делаю</h2>
+            <h3>Проектный руководитель</h3>
+
+            <p>Курирую продукт и задачи в ходе разработки. Контролирую сроки и&nbsp;загрузку команды.
+                Решаю возникающие проблемы. </p>
+
+            <p>Помогаю договариваться службам заказчика между собой. Если договориться не&nbsp;получается, не&nbsp;стесняюсь
+                эскалировать проблему до руководителей и собственников бизнеса. </p>
+
+            <p>Общаюсь с инфобезами и юристами. Обсуждаю требования к ролям и правам пользователей, ограничения
+                доступов,
+                требования к логированию действий пользователей и событий в системе.</p>
+
+            <p>Обсуждаю с командами эксплуатации где и как будет установлена система. Помогаю
+                договариваться если требования разработки и возможности эксплуатации различаются. </p>
+
+            <p>Использую jira, redmine, youtrack и другие проектные системы и таск-трекеры</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <h3>Бизнес-аналитик</h3>
+
+            <p>Общаюсь с бизнес-заказчиками, пользователями, контролирующими службами и другими
+                людьми, которые влияют на продукт. Читаю нормативные документы, регламенты, должностные
+                инструкции.</p>
+
+            <p>Выясняю что за задачи стоят перед бизнесом, какие есть проблемы и как их можно решить. Могу
+                поговорить с
+                зампредом правления, директором, руководителем подразделения, старшим менеджером и операционистом.
+                Для
+                каждого использую подходящий контекст и детализацию. Не гружу техническими терминами и&nbsp;абстракциями.
+            </p>
+
+            <p>Составляю документы концепции и границ проекта, бизнес-требования и критерии их выполнения,
+                функциональные требования к системам. Рисую понятные схемы бизнес-процессов и наброски интерфейсов.
+                Лаконично описываю требования.</p>
+
+            <p>Обсуждаю сценарии использования продукта с дизайнерами. Слежу чтобы макеты и прототипы
+                соответствовали
+                требованиям и&nbsp;решали бизнес-задачи. </p>
+
+            <p>Использую Confluence, нотацию BPMN 2.0, графический редактор Figma и&nbsp;инфостиль в тексте.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <h3>Системный аналитик</h3>
+
+            <p>Продумываю и описываю архитектуру систем. Согласую ее с командами разработки, тестирования и
+                эксплуатации.</p>
+
+            <p>Работаю с API. Изучаю документацию сервисов, тестирую API в связке с&nbsp;бизнес&nbsp;сценариями,
+                описываю разработчикам форматы запросов и ответов. Описываю где брать данные для запросов.</p>
+
+            <p>Проектирую API новых сервисов с учетом требований и ограничений по&nbsp;интеграции с существующими.
+                Готовлю спецификации на разработку API в&nbsp;понятном разработчикам формате OpenAPI</p>
+
+            <p>Составляю технические схемы: диаграммы последовательности, классов, логические и физические модели
+                данных.</p>
+
+            <p>Выступаю экспертом в инфраструктуре проекта — знаю все сервисы, их связи и&nbsp;наборы данных,
+                которыми
+                они обмениваются.</p>
+
+            <p>Обсуждаю с архитекторами и техлидами архитектуру систем, технологический стек, технические
+                решения сложных задач. Помогаю разбивать объёмные задачи на подзадачи. Учитываю особенности
+                архитектуры при составлении требований. Если техлид загружен или отсутствует, помогаю фронтенду
+                и&nbsp;бэкенду договориться в спорных ситуациях.</p>
+
+            <p>Если нужно достать и обработать данные, могу составить сложный SQL запрос. Пишу скрипты и сервисы на
+                питоне.</p>
+
+            <p>Применяю UML, Python, SQL (ms, postgres), git, docker, Jetbrains IDE (PyCharm, Datagrip),
+                sh-скрипты</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <h3>Тимлид</h3>
+
+            <p>Выстраиваю конвейер разработки от запроса заказчика до сдачи готового решения.</p>
+
+            <p>Слежу за здоровьем и производительностью команды. Помогаю решать внутренние конфликты и
+                оптимизировать
+                процессы. Провожу дейлики, ретроспективы, встречи 1 на 1. Помогаю техлидам проводить такие встречи
+                с&nbsp;разработчиками. Помогаю коллегам составлять и выполнять индивидуальные планы развития.</p>
+
+            <p>Провожу адаптацию и наставничество для аналитиков, обучаю и развиваю их.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
 </body>
 </html>
